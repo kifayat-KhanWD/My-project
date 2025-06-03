@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High School Admission Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #28a745 !important;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar .nav-link {
+      margin-right: 15px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px gray;
+      max-width: 400px;
+      width: 100%;
+      margin: 150px auto 30px auto; /* creates space from fixed navbar */
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    select,
+    textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #btn1 {
+      padding: 10px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #btn1:hover {
+      background: #005bb5;
+    }
+
+  
+    @media (max-width: 600px) {
+      .container {
+        max-width: 90%;
+        padding: 15px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">GHS PESHAWAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-light" href="./home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="./admissions.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="./Environment.html">Environment</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="./subjects.html">Subjects</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="./contact.html">Contact Information</a></li>
+        </ul>
+        <form2 class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Form Container -->
+  <div class="container">
+    <h1>High School Admission Form</h1>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="father_name">Father Name:</label>
+      <input type="text" id="father_name" name="father_name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="guardian">Guardian's Name:</label>
+      <input type="text" id="guardian" name="guardian" required>
+
+      <label for="grade">Applying for Grade:</label>
+      <select id="grade" name="grade" required>
+        <option value="6">Grade 6th</option>
+        <option value="7">Grade 7th</option>
+        <option value="8">Grade 8th</option>
+        <option value="9_arts">Grade 9th Arts</option>
+        <option value="9_science">Grade 9th Science</option>
+        <option value="10_arts">Grade 10th Arts</option>
+        <option value="10_science">Grade 10th Science</option>
+      </select>
+
+      <button2 id="btn1" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
